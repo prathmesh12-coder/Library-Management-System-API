@@ -23,7 +23,7 @@ class Student(BaseModel):
     address: dict
 
 
-
+#Defining pydantic model with optional specifically for patch request
 class UpdatedStudent(BaseModel):
     name: Optional[str] = None
     age: Optional[int] = None
